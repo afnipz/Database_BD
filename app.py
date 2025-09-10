@@ -30,15 +30,13 @@ def load_model():
 model = load_model()
 
 # --- Konfigurasi Koneksi Database (Supabase/PostgreSQL) ---
-# !!! GANTI DENGAN DETAIL KONEKSI DATABASE KAMU !!!
 DB_CONFIG = {
     'dbname': 'postgres',
     'user': 'postgres.poyqtorvllnwvrqmctnl',
-    'password': 'Raesa2345*', # <--- GANTI INI
-    'host': 'aws-1-ap-southeast-1.pooler.supabase.com',         # <--- GANTI INI (contoh: db.xxxxxxxx.supabase.co)
+    'password': 'Raesa2345*', 
+    'host': 'aws-1-ap-southeast-1.pooler.supabase.com',   
     'port': '6543'
 }
-
 # Menggunakan koneksi yang di-cache untuk efisiensi
 @st.cache_resource
 def get_db_connection():
